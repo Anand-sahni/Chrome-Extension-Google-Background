@@ -1,0 +1,16 @@
+{
+    "name": "Background Changer",
+    "description": "Changes background of all gooogle sites.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "css": ["main.css"]
+        }
+    ]
+    
+}
